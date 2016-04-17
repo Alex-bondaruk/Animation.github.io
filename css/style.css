@@ -1,0 +1,515 @@
+body {
+    background:#163039;   
+}
+#wrapper {
+    max-width: 1400px;
+    min-width: 360px;
+    width: 100%;
+}
+
+#header {
+    position: relative;
+    width: 92%;
+    height: 300px;
+    margin: 8.1521% auto 0 auto; 
+    background-image: url(../images/pencil.png);
+    background-color: #fff;
+    border-radius: 5% 5% 0 0;
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    display: inline-block;
+    margin: 2.5% 0 1% 2.5%;
+}
+
+.object__1 {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+
+.object__1:hover {
+  -webkit-animation-play-state:paused;   
+  -moz-animation-play-state:paused;
+  -ms-animation-play-state:paused;
+}
+
+@-webkit-keyframes star {
+    0% {-webkit-transform: rotate3d(0, 0, -1, 170deg) skewX(15deg);
+-webkit-perspective:600;} 
+    50% {-webkit-transform:rotate3d(0, 0, -1, 130deg) skewX(20deg);
+-webkit-perspective:600;}
+    100% {-webkit-transform:rotate3d(0, 0, -1, 100deg) skewX(25deg);
+-webkit-perspective:600;}
+}
+
+@-moz-keyframes star  
+    0% {-webkit-transform: rotate3d(0, 0, -1, 170deg) skewX(15deg);
+-webkit-perspective:600;} 
+    50% {-webkit-transform:rotate3d(0, 0, -1, 130deg) skewX(20deg);
+-webkit-perspective:600;}
+    100% {-webkit-transform:rotate3d(0, 0, -1, 100deg) skewX(25deg);
+-webkit-perspective:600;}
+}
+@keyframes star {
+    0% {-webkit-transform: rotate3d(0, 0, -1, 170deg) skewX(15deg);
+-webkit-perspective:600;} 
+    50% {-webkit-transform:rotate3d(0, 0, -1, 130deg) skewX(20deg);
+-webkit-perspective:600;}
+    100% {-webkit-transform:rotate3d(0, 0, -1, 100deg) skewX(25deg);
+-webkit-perspective:600;}
+} 
+
+.star img {
+    -moz-animation: star 8s ease-in-out 2s infinite alternate;
+    -webkit-animation: star 8s ease-in-out 2s infinite alternate;
+}
+
+.object__2 {
+    position: absolute;
+    top: 0;
+    left: 65%;
+}
+
+.object__2:hover {
+  -webkit-animation-play-state:paused;   
+  -moz-animation-play-state:paused;
+  -ms-animation-play-state:paused;}
+@-webkit-keyframes cloud {
+    0% {-webkit-transform: translate(0);} 
+    25% {-webkit-transform: translate(-10%);}
+    50% {-webkit-transform: translate(-25%);}
+    75% {-webkit-transform: translate(-55%);}
+    100% {-webkit-transform: translate(-100%);}
+}
+
+@-moz-keyframes cloud {
+    0% {-moz-transform: translate(0);}
+    25% {-moz-transform: translate(-10%);}
+    50% {-moz-transform: translate(-25%);}
+    75% {-moz-transform: translate(-55%);}
+    100% {-moz-transform: translate(-100%);}
+}
+@keyframes cloud {
+    0% {transform: translate(0;)}
+    25% {transform: translate(-10%);}
+    50% {transform: translate(-25%);}
+    75% {transform: translate(-55%);}
+    100% {transform: translate(-100%);}
+} 
+
+.cloud img {
+    -moz-animation: cloud 8s ease-in-out 2s infinite alternate;
+    -webkit-animation: cloud 8s ease-in-out 2s infinite alternate;
+}
+
+.object__3 {
+    position: absolute;
+    top: 0;
+    left: 35%;
+}
+
+.object__3:hover {
+  -webkit-animation-play-state:paused;   
+  -moz-animation-play-state:paused;
+  -ms-animation-play-state:paused;
+}
+
+@-webkit-keyframes moon {
+    0% {-webkit-transform: rotate(0deg);} 
+    33% {-webkit-transform:rotate(-35deg);}
+    66% {-webkit-transform:rotate(35deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+
+@-moz-keyframes moon { 
+    0% {-webkit-transform: rotate(0deg);} 
+    33% {-webkit-transform:rotate(-35deg);}
+    66% {-webkit-transform:rotate(35deg);}
+    100% {-webkit-transform:rotate(0deg);}
+}
+@keyframes moon {
+    0% {-webkit-transform: rotate(0deg);} 
+    33% {-webkit-transform:rotate(-35deg);}
+    66% {-webkit-transform:rotate(35deg);}
+    100% {-webkit-transform:rotate(0deg);}
+} 
+
+.moon img {
+    -moz-animation: moon 8s ease-in-out 2s infinite alternate;
+    -webkit-animation: moon 8s ease-in-out 2s infinite alternate;
+}
+
+.header__nav {
+    width: 71.7391%;
+    height: 45px;
+    margin: 2.5%;
+}
+
+nav {
+    float: left;
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+}
+
+nav ul li {
+    float: left;
+    padding: 15px;
+    background-color: bisque;
+    border: 1px #333 solid;
+    border-radius: 10%;
+}
+
+nav ul li {
+    -webkit-transition: -webkit-transform .5s, background-color 1s ease-in .5s;
+    -moz-transition: -moz-transform .5s, background-color 1s ease-in .5s;
+    transition: transform .5s, background-color 1s ease-in .5s;
+}
+
+nav ul li:hover {
+    background-color: #f69302;
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    transform:scale(1.2);
+}
+nav ul li a {
+    display: block;
+    position: relative;
+    text-align: center;
+    color: #474747;
+    font: 400 30px/18px "AceBinghamSH", sans-serif;
+    text-decoration: none;
+    transition: 0.5s;
+    transform-origin: 50% 0;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+nav ul li a:after {
+    background-color:burlywood;
+    color: #f2f2f2;
+    content: attr(data-title);
+    position: absolute;
+    top: 0%;
+    line-height: 2;
+    text-align: center;
+    left: 0%;
+    width: 100%;
+    transform: rotateX(90deg);
+}
+
+nav ul li a:before {
+    background-color: antiquewhite;
+    content: " "; 
+    position: absolute;
+    top: 45px;
+    left: 0%;
+    right: 0%;
+    transform-origin: 0 0;
+    width: 100%;
+}
+
+nav ul li:nth-child(-n+2) a:before {
+    transform: rotateY(90deg) translateY(3em) translateZ(3em);
+}
+
+nav ul li:nth-child(-n+3) a:before {
+    transform: rotateX(-90deg) translateY(-9em);
+}
+
+nav ul li:hover a {
+    transform: rotateX(-90deg) translateY(-4.5em);
+    z-index: 10;
+}
+
+nav ul li a:hover {
+    color:darkred;
+}
+
+#main {
+    width: 92%;
+    height: 874px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 0  0 5% 5%;
+}
+
+.content {
+    float: left;
+    width: 60%;
+    margin-left: 2.5%;
+}
+
+.content__item1 {
+    margin-bottom: 5%;  
+}
+
+.title img {
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+.title p {
+    display: inline-block;
+    color: #474747;
+    font: 400 24px/18px "Arial";
+    padding: 2.5% 1% 0 0; 
+    height: 80px;
+    margin-bottom: 1%;
+}
+
+.title p span {
+    font: 700 60px "Arial";
+    text-transform: uppercase
+}
+
+p.data, p.categories  {
+    display: inline-block;
+    height: 17px;
+    font: 400 10px "Arial";
+}
+
+p.data {
+    width: 15.6666%;
+    color: #e6e5e5;
+    background-color: #474747;
+    text-align: center;
+}
+
+p.categories {
+    width: 67.6666%;
+    color: #1d1d1d;
+    background-color: #f2f2f2;
+    margin-bottom: 3.3333%;
+    padding-left: 1%;
+}
+
+.main__content__item1 {
+    width: 85%;
+    height: 235px;
+    margin-bottom: 3.3333%;
+}
+
+.main__content__item1 .img-photo {
+    float: left;
+    margin-right: 3.3333%;
+}
+
+.main__content__item1 p.text {
+    color: #595959;
+    font: 400 14px "Arial";
+    text-align: center;
+}
+
+.main__content__item2 {
+    width: 85%;
+    height: 100%;
+    margin-bottom: 3.3333%;
+}
+.main__content__item2 p.text {
+    color: #595959;
+    font: 400 14px "Arial";
+    text-align: center;
+    height: 
+}
+
+p.comments {
+    float: left; 
+    color: #474747;
+    font: 400 14px "Arial";
+}
+
+p.comments a {
+    text-decoration: none;
+    color: #f07402;
+}
+
+p.read__more {
+    display: inline-block;
+    margin-left: 60%;
+}
+
+p.read__more span {
+    vertical-align: top;
+}
+
+p.read__more img:hover {
+    transform: scale(1.5) rotate(10deg);
+}
+
+.sidebar {
+    position: relative;
+    float: right; 
+    width: 37%
+}
+
+p.rss a {
+    position: absolute;
+    right: 27%;
+    top: 0;
+    color: #c5c5c5;
+    font: 400 24px/18px "AceBinghamSH";
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 5%;
+}
+
+p.rss a:hover {
+    color: #f69302;
+    transform: translate(-10%);
+}
+
+p.rss a:focus {
+    color: aqua;
+}
+
+.sidebar img.rss {
+    position: absolute;
+    right: 0;
+    top: -9%;
+}
+
+.form {
+    display: inline-block;
+    width: 82.3529%;
+    height:auto;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    background: #585858;
+    border-radius: 5%;
+}
+
+.search {
+    margin-left: -24%;
+    margin-top:  -9%;
+}
+
+.input__search {
+    height: 35px;
+    width: 55%;
+    padding-left: 3%; 
+    border: 1px #ccc solid;
+}
+
+.input__submit  {
+    background: #ccc;
+    width: 40%;
+    height: 35px;
+    color: #111;
+    font: 500 14px/14px sans-serif;
+}
+
+.input__submit:hover {
+    background: #f69302;
+    font: 500 15px/15px sans-serif;
+    border-radius: 5%;
+    outline: none;
+}
+
+
+form {
+    margin: 17% 0 8.8131% 20%;
+}
+
+.categories__aside {
+    width: 100%;
+}
+
+p.title1, p.title2  {
+    color: #474747;
+    font: 400 30px/18px "AceBinghamSH";
+    padding: 3%;
+}
+
+p.title2 {
+    clear: both;
+}
+.left__categories {
+    width: 50%;
+    float: left;   
+}
+
+.right__categories {
+    width: 50%;
+    float: right;  
+    clear: right;
+}
+
+.archives__aside {
+    width: 100%;
+}
+
+.left__archives {
+    width: 50%;
+    float: left;
+}
+
+.right__archives {
+    width: 50%;
+    float: right;
+}
+
+ul.left__categories li a, ul.right__categories li a, ul.left__archives li a, ul.right__archives li a {
+    text-decoration: none;
+    color: #474747;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+ul.left__categories li a:hover, ul.right__categories li a:hover, ul.left__archives li a:hover, ul.right__archives li a:hover {
+    color:#f69302;
+}
+
+footer {
+    position: relative;
+    height: 70px;
+    width: auto;
+}
+
+.circle__big {
+    position: absolute;
+    width: 7%;
+    height: 100%;
+    top: -50%;
+    right: 10%;
+    background-color: #fff;
+    border: 1px #8f8f8f solid;
+    border-radius: 50%;
+}
+.circle__small {
+    position: absolute;
+    width: 3.5%;
+    height: 50%;
+    top: -25%;
+    right: 11.7%;
+    background-color: #163039;
+    border: 1px #8f8f8f solid;
+    border-radius: 50%;
+}
+.circle__left {
+    position: absolute;
+    width: 1.5%;
+    height: 25%;
+    top: -12.5%;
+    right: 12.7%;
+    background-color: #f69302;
+    border: 1px #8f8f8f solid;
+    border-radius: 50%;
+}
+footer p {
+    padding-top: 35px;
+    font:400 11px/11px "Tahoma";
+    color: #d8e4e8;  
+    text-align:center;
+}
+
+@font-face {
+    font-family: "AceBinghamSH"; 
+    src: url(font/AceBinghamSH.ttf); 
+   }
+   h1 {
+    font-family: "AceBinghamSH", sans-serif;
+   }
